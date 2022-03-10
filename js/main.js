@@ -1,4 +1,4 @@
 
-let equalsBtn = ('#equals').val();
+let equalsBtn = $('#equals').val();
 console.log(equalsBtn);
 
