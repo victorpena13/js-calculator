@@ -1,4 +1,11 @@
+$('#users-equation').keyup((e) => {
+    let equation = [];
+    let userInput = e.target.value;
+    $('#equals').click(function () {
+        equation.push(userInput);
+    });
+    console.log(equation);
+});
 
-let equalsBtn = $('#equals').val();
-console.log(equalsBtn);
 
+//use konami code assignment as an example.
