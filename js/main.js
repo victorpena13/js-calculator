@@ -1,6 +1,6 @@
 
 equationList = [];
-function calculateEquation() {
+function captureEquation() {
     var equation = {
         problem: ''
     }
@@ -10,6 +10,6 @@ function calculateEquation() {
 }
 
 var equalsBtn = document.getElementById('equals');
-equalsBtn.addEventListener('click', calculateEquation);
+equalsBtn.addEventListener('click', captureEquation);
 
 
