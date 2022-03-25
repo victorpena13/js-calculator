@@ -15,6 +15,7 @@ function calculateEquation() {
     for(let i = 0; i < equationList.length; i++) {
         let splitEquation = equationList[i].problem.split('+');
         console.log(splitEquation);
+        console.log(parseInt(splitEquation[0]) + parseInt(splitEquation[1]));
     }
 }
 
