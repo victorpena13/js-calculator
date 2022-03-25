@@ -4,12 +4,14 @@ function captureEquation() {
     var equation = {
         problem: ''
     }
-    equation.problem = document.getElementById('users-equation').value;
+    equation.problem = $('#users-equation').val();
     equationList.push(equation);
     console.log(equation);
 }
+$('#equals').click(captureEquation);
 
-var equalsBtn = document.getElementById('equals');
-equalsBtn.addEventListener('click', captureEquation);
+
+
+
 
 
