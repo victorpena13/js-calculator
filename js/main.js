@@ -11,6 +11,8 @@ function captureEquation() {
 $('#equals').click(captureEquation);
 
 
+//use .split to convert string to an equation.
+
 
 
 
