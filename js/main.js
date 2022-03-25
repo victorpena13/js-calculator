@@ -20,7 +20,7 @@ function calculateEquation() {
 }
 
 
-
+//use .filter or .contains to create an if statement based on symbol.
 //use .split to convert string to an equation.
 
 
