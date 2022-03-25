@@ -1,7 +1,5 @@
+equationList = [];
 
-equationList = [
-    {problem: '1+1'}
-];
 function captureEquation() {
     var equation = {
         problem: ''
@@ -9,11 +7,17 @@ function captureEquation() {
     equation.problem = $('#users-equation').val();
     equationList.push(equation);
     console.log(equation);
+    calculateEquation();
 }
 $('#equals').click(captureEquation);
 
-var splitEquation = equationList[0].problem.split('+');
-console.log(splitEquation);
+function calculateEquation() {
+    for(let i = 0; i < equationList.length; i++) {
+        let splitEquation = equationList[i].problem.split('+');
+        console.log(splitEquation);
+    }
+}
+
 
 
 //use .split to convert string to an equation.
