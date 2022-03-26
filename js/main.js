@@ -7,19 +7,24 @@ function captureEquation() {
     equation.problem = $('#users-equation').val();
     equationList.push(equation);
     console.log(equation);
-    calculateEquation();
+    calculate();
 }
 $('#equals').click(captureEquation);
 
-function calculateEquation() {
+function calculate() {
     for(let i = 0; i < equationList.length; i++) {
-        let splitEquation = equationList[i].problem.split('+');
-        console.log(splitEquation);
-        console.log(parseInt(splitEquation[0]) + parseInt(splitEquation[1]));
+        if (equationList[i].problem.includes('-')) {
+            let splitEquation = equationList[i].problem.split('-');
+            console.log(splitEquation);
+            console.log(parseInt(splitEquation[0]) - parseInt(splitEquation[1]));
+        } else if (equationList[i].problem.includes('+')) {
+            let splitEquation = equationList[i].problem.split('+');
+            console.log(splitEquation);
+            console.log(parseInt(splitEquation[0]) + parseInt(splitEquation[1]));
+        }
+
     }
 }
-
-
 //use .filter or .contains to create an if statement based on symbol.
 //use .split to convert string to an equation.
 
