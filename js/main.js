@@ -12,10 +12,7 @@ function captureEquation() {
 $('.equals').click(captureEquation);
 
 function calculate() {
-    let result = {
-        answer: ''
-    }
-    for(let i = 0, x = 0; i < equationList.length, x < result.length; i++, x++) {
+    for(let i = 0; i < equationList.length;  i++) {
         if (equationList[i].problem.includes('-')) {
             let splitEquation = equationList[i].problem.split('-');
             console.log(splitEquation);
